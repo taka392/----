@@ -1,0 +1,382 @@
+    .heder-nav{
+    text-align: center;
+    font-family: 'MonteCarlo', cursive;
+    color: black;
+    }
+    .heder-nav ul{
+    margin: 0 ;
+    padding: 0 ;
+    }
+    .heder-nav li{
+    list-style: none;
+    display: inline-block;
+    width: 10%;
+    min-width: 90px;
+    }
+    .heder-nav li:not(:last-child){
+    border-right:2px solid #ddd;
+    }
+    .heder-nav a{
+    text-decoration: none;
+    color: #333;
+    }
+    .heder-nav a.current{
+    color: #00B0F0;
+    border-bottom:2px solid #00B0F0;
+    }
+    .heder-nav　:hover{
+    color:　#CC9966;
+    border-bottom:none;
+    } 
+
+    .heder-nav > ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+/* 　　メイン画像 */
+    #home {
+        width: 100%;
+        height: 540px;
+        background: url(./img/pexels-photo-683039.jpeg);
+        background-position: 0 0;
+        -webkit-animation: bgroop 20s linear infinite;
+        animation: bgroop 20s linear infinite;
+    }
+    @-webkit-keyframes bgroop {
+        from {
+            background-position: 0  0;
+        }
+        to {
+            background-position: -1956px 0;
+        }
+    }
+    @keyframes bgroop {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: -1956px 0;
+        }
+    }
+
+
+
+    .menu1 >h2,
+    .menu2 >h2,
+    .menu3 >h2,
+    .menu4 >h2
+     {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: gray;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    font-size: 20px;
+    text-align: left;
+}
+
+.contents_scoreimage {
+    height: 150px;
+    width: 400px;
+    margin: 0px 20px;
+}
+
+.map{
+    height: 450px;
+    width: 100%;
+}
+
+.Location
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.Form {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form {
+      margin-top: 40px;
+    }
+  }
+  .Form-Item {
+    border-top: 1px solid #ddd;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item {
+      padding-left: 14px;
+      padding-right: 14px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      flex-wrap: wrap;
+    }
+  }
+  .Form-Item:nth-child(5) {
+    border-bottom: 1px solid #ddd;
+  }
+  .Form-Item-Label {
+    width: 100%;
+    max-width: 248px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Label {
+      max-width: inherit;
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+    }
+  }
+  .Form-Item-Label.isMsg {
+    margin-top: 8px;
+    margin-bottom: auto;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Label.isMsg {
+      margin-top: 0;
+    }
+  }
+  .Form-Item-Label-Required {
+    border-radius: 6px;
+    margin-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 48px;
+    display: inline-block;
+    text-align: center;
+    background: #CC9966;
+    color: #fff;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Label-Required {
+      border-radius: 4px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      width: 32px;
+      font-size: 10px;
+    }
+  }
+  .Form-Item-Input {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 48px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Input {
+      margin-left: 0;
+      margin-top: 18px;
+      height: 40px;
+      flex: inherit;
+      font-size: 15px;
+    }
+  }
+  .Form-Item-Textarea {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 216px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Textarea {
+      margin-top: 18px;
+      margin-left: 0;
+      height: 200px;
+      flex: inherit;
+      font-size: 15px;
+    }
+  }
+  .Form-Btn {
+    border-radius: 6px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 280px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: #CC9966;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Btn {
+      margin-top: 24px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      width: 160px;
+      font-size: 16px;
+    }
+  }
+
+  footer{
+    background-color: #CC9966;
+    font-size: 130%;
+    color: white;
+    padding: 20px 0;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion label {
+  display: block;
+  background-color: #eeeeee;
+  padding: 15px 15px;
+  color: #424242;
+  cursor: pointer;
+  border-top: 1px solid #ffffff;
+}
+.accordion p {
+  opacity: 0;
+  display: none;
+  background-color: #fff;
+  padding: 15px;
+}
+/* change id to relate to new html */
+#one:checked~.hiddentext {
+  display: block;
+  opacity: 1;
+}
+input#one {
+  display: none;
+  position: relative;
+}
+#two:checked~.hiddentext {
+  display: block;
+  opacity: 1;
+}
+input#two {
+  display: none;
+  position: relative;
+}
+#three:checked~.hiddentext {
+  display: block;
+  opacity: 1;
+}
+input#three {
+  display: none;
+  position: relative;
+}
+
+
+.Location,
+#iqnuiries >h2
+{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+  color: black;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu1{
+  background-image: url(./img/bar-984527__480のコピー.png);
+background-color:rgba(255,255,255,0.8);
+background-blend-mode:lighten;
+font-size: 80%;
+}
+
+.menu2{
+  background-image: url(./img/coffee-shop-1209863__340.webp);
+background-color:rgba(255,255,255,0.8);
+background-blend-mode:lighten;
+background-size: cover;
+
+}
+.menu3{
+  background-image: url(./img/cafe-5635015_1280.jpeg);
+background-color:rgba(255,255,255,0.8);
+background-blend-mode:lighten;
+}
+.menu4{
+  background-image: url(./img/coffee-cup-768775_1280.jpeg);
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten;
+}
+
+body{
+  background-image: url(./img/brown-paper-cardboard-and-texture-12-1560x1631.jpeg);
+background-blend-mode:lighten;
+height: cover;
+font-family: 'MonteCarlo', cursive;
+font-family: 'MonteCarlo', cursive;
+}
+
+#home > h1,
+#home > h2
+{
+  font-size: 100px;
+  text-align: center;
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+  margin-top: 50px;
+}
+
+.menu1,
+.menu2,
+.menu3,
+.menu4
+{
+  height: 300px;
+}
+
+<!-- レスポンシブデザイン>
+#home h1 {
+  font-size: 100%;
+}
+
+
