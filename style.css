@@ -324,7 +324,6 @@ input#three {
   background-image: url(./img/9:14.jpg);
 background-color:rgba(255,255,255,0.8);
 background-blend-mode:lighten;
-background-size: cover;
 font-size: 80%;
 }
 
@@ -378,6 +377,7 @@ font-family: 'MonteCarlo', cursive;
 .menu4
 {
   height: 300px;
+
 }
 
 <!-- レスポンシブデザイン>
@@ -385,19 +385,7 @@ font-family: 'MonteCarlo', cursive;
   font-size: 100%;
 }
 
-.menu1 > img,
-.menu2 > img,
-.menu3 > img,
-.menu4 > img
-{
-  height: auto;
-  width: auto;
-}@media screen and (max-width:780px) {
-  .menu1 > img,
-.menu2 > img,
-.menu3 > img,
-.menu4 > img{
-  height: 40px;
-  width: 40px;
-}
+.contents_scoreimage {
+  height: 150px;
+  width: 150px;
 }
